@@ -1,0 +1,298 @@
+body {
+
+  width: 100%;
+
+
+}
+
+button.normal {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  margin-bottom: 0;
+}
+
+/*the styling of the html*/
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 90px;
+  background-color: #e48b06;
+  box-shadow: 0 5px 15px rgba(1, 1, 1, 1);
+  margin-left: -51px;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%
+    /* 86.10;*/
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  transition: 0.8s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 38%;
+  height: 2px;
+  background-color: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+
+/*home page*/
+#hero {
+  background-image: url(images1/BIS1.jpg);
+  height: 90vh;
+  width: 100%;
+  background-position: top 25% right 1%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -30px;
+  background-repeat: no-repeat;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+/*features of product*/
+.f-box {
+  display: inline-block;
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.3);
+  border: 2px solid #1c1e1c;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+
+.f-box:hover {
+  box-shadow: 10px 10px 34px rgb(70, 64, 221, 0.1);
+}
+
+
+.f-box img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+
+
+.f-box h3 {
+  display: inline-block;
+  padding: 9px 8px 8px;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #e26fbe;
+  border-radius: 5px;
+}
+
+.f-box:nth-child(2) h3 {
+  background-color: #088178;
+  color: white;
+}
+
+.f-box:nth-child(3) h3 {
+  background-color: #34049a;
+  color: white;
+}
+
+
+
+#p-f {
+
+  line-height: 1;
+  color: #ffffff;
+  background-color: #e26fbe;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+}
+
+.section-p1 {
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.img1 {
+  height: 350px;
+  width: 100%;
+  margin-left: -10px;
+  border: 2px solid #012a01;
+  border-radius: 8px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background-color: #088178;
+  margin-right: 50px;
+}
+
+
+
+
+.banner {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 0;
+  /*background-image: url(images1/GA1.jpg);*/
+  background-color: #e6ad03;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-color: #2e0230;
+  margin-top: 20px;
+
+}
+
+.banner h4 {
+  color: rgb(59, 78, 250);
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+
+.banner h2 {
+  color: rgb(251, 253, 252);
+  font-size: 30px;
+  padding: 10px 0;
+
+}
+
+.banner h2 span {
+  color: red;
+}
+
+button:hover {
+  /**/
+  background-color: #088178;
+  color: rgb(45, 2, 2);
+}
+
+
+
+.heit img {
+  width: 100%;
+  height: 300px;
+  border: 2px solid green;
+  object-fit: cover;
+}
+
+.icon {
+  color: white;
+  margin-left: 0;
+}
+
+
+
+/*gallery*/
+
+.image-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.image-container {
+  margin: 10px;
+  position: relative;
+
+}
+
+.image-container img {
+  width: 200px;
+  /* Set the width of the images */
+  height: 230px;
+  /* Set the height of the images */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-text {
+  position: absolute;
+  bottom: 100px;
+  left: 10px;
+  color: rgb(252, 249, 249);
+  font-size: 18px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Tablet and desktop styles */
+@media (max-width:700px) {
+
+  #header,
+  #hero,
+  #feature,
+  #f-box {
+    width: 100%;
+  }
+
+}
+
+@media (min-width:768px) {
+
+  #header,
+  #feature,
+  #f-box {
+    width: 80.5%;
+  }
+
+}

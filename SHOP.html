@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yamba Enterprise</title>
+  <link rel="stylesheet" href="wed.css">
+  <style>
+    .small-img-group {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .small-img-col {
+      /*
+    flex-basis: 24%;
+    cursor:pointer;
+    height:50px; 
+  vertical-align:top;
+  border: 2px solid red;
+  border-left: 2px red;
+*/
+
+      height: 250px;
+      cursor: pointer;
+      display: inline-block;
+      width: 180px;
+      text-align: center;
+      padding: 25px 15px;
+      box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.3);
+      border: 2px solid #5d675d;
+      border-radius: 4px;
+      margin: 5px;
+    }
+
+    .small-img-col h3 {
+      display: inline-block;
+      padding: 9px 8px 8px;
+      line-height: 1;
+      color: #ffffff;
+      background-color: #e26fbe;
+      border-radius: 5px;
+    }
+
+    .small-img-col:nth-child(2) h3 {
+      background-color: #073b38;
+      color: white;
+    }
+
+    .small-img-col:nth-child(3) h3 {
+      background-color: #060349;
+      color: rgb(250, 249, 249);
+    }
+
+    .small-img-col:nth-child(4) h3 {
+      background-color: #d78605;
+      color: white;
+    }
+
+    .small-img-col:hover {
+      box-shadow: 10px 10px 34px rgb(70, 64, 221, 0.1);
+    }
+
+
+
+
+
+    .col-lg-5 {
+      float: left;
+    }
+
+
+
+
+
+
+
+    h2 {
+      text-align: center;
+      color: blueviolet;
+    }
+
+    /*second section*/
+
+    .container {
+      display: flex;
+      /* make the container a flex container */
+      flex-wrap: wrap;
+      /* wrap the items in multiple rows if needed */
+    }
+
+    .row {
+      display: flex;
+      /* make the row a flex container */
+      flex-direction: row;
+      /* arrange the items in a row */
+      justify-content: center;
+      /* center the items horizontally */
+    }
+
+    .item {
+      display: flex;
+      /* make each item a flex container */
+      flex-direction: column;
+      /* arrange the image, text, and price in a column */
+      align-items: center;
+      /* center the image, text, and price horizontally */
+      margin: 20px;
+      /* add space between items */
+      width: calc(25% - 40px);
+      /* make each item take up 25% of the row width, minus margin */
+    }
+
+    .item img {
+      max-width: 100%;
+      /* make each image fit the item width */
+      height: auto;
+      /* maintain each image's aspect ratio */
+      margin-bottom: 10px;
+      /* add space between image and text */
+      transition: transform 0.3s;
+      /* add a transition effect for the hover effect */
+    }
+
+    .item img:hover {
+      transform: scale(1.1);
+      /* scale up the image on hover */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      /* add a shadow effect on hover */
+    }
+
+    .item h4 {
+      font-weight: bold;
+      /* make the product name bold */
+      margin-bottom: 5px;
+      /* add space between product name and price */
+    }
+
+    .item p {
+      color: #999;
+      /* make the price gray */
+      font-size: 1.2em;
+      /* make the price slightly larger */
+      margin: left -40px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 20px;
+      color: #3c3434;
+    }
+
+    .banner1 img {
+      height: 300px;
+      width: 920px;
+      object-fit: fill;
+    }
+
+    .banner {
+      height: 250px;
+      width: 100%;
+      margin-left: -8px;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <a href="#"><img src="images1/KO9.png" alt=""> </a>
+
+    <ul id="navbar">
+      <li><a href="index.html" target="_self">Home</a></li>
+      <li><a href="SHOP.html" target="_self" class="active">Shop</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+  <div><img src="images2/BANNER2.jpg" alt="" class="banner"></div>
+  <br>
+  <div class="small-img-group">
+    <div class="small-img-col">
+      <img src="images1/f3.jpg" class="small-img" width="100%" alt="">
+      <h3>Multi purpose cooker <strong style="color: #0f0f0f;">GHC450</strong></h3>
+
+    </div>
+    <div class="small-img-col">
+      <img src="images1/pic1.jpg" class="small-img" width="100%" alt="">
+      <br><br><br><br><br><br>
+      <h3>IPAD <strong>GHC1500</strong></h3>
+
+    </div>
+    <div class="small-img-col">
+      <img src="images1/f4.jpg" class="small-img" width="100%" alt="">
+
+      <br><br>
+      <h3>E-BIC <strong>GHC4000</strong></h3>
+
+    </div>
+    <div class="small-img-col">
+      <img src="images1/pic4.jpg" class="small-img" width="100%" alt="">
+      <br><br><br><br>
+      <h3>IPHONE <strong>GHC5000</strong></h3>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!--second section-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="item">
+          <img src="images2/sho1.jpg" alt="Rice cooker">
+          <h4>Eletronic Rice cooker</h4>
+          <p>Ghc 380.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop2.jpg" alt="Air Fryer">
+          <h4>Air Fryer</h4>
+          <p>Ghc 650</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop3.jpg" alt="Image 3">
+          <h4>Gummies care for hair nails </h4>
+          <p>Ghc 200.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop4.jpg" alt="Gummies">
+          <h4> Water heater</h4>
+          <p>Ghc 130.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--third section-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="item">
+          <img src="images2/shop5.jpg" alt="Image 1" style="height: 200px;">
+          <h4>Multi purpose cooker</h4>
+          <p>Ghc 500.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop6.jpg" alt="Image 2">
+          <h4>IPHONE</h4>
+          <p>Ghc 1500.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop8.jpeg" alt="Image 3">
+          <h4>Fufu blender</h4>
+          <p>Ghc 380.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop7.jpeg" alt="Image 4">
+          <h4>Microwave</h4>
+          <p>Ghc 350.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--fourth section-->
+  <h3>LATEST ARRIVALS</h3>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="item">
+          <img src="images2/shop11.jpeg" alt="Image 1">
+          <h4>Fufu blender</h4>
+          <p>Ghc 350.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop10.jpeg" alt="Image 2">
+          <h4>Silicon spoon</h4>
+          <p>Ghc 300.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop9.jpeg" alt="Image 3">
+          <h4>BP Machine</h4>
+          <p>Ghc 200.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop16.jpeg" alt="Image 4">
+          <h4>Fan</h4>
+          <p>Ghc 130.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Five section-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="item">
+          <img src="images2/shop12.jpeg" alt="Image 1">
+          <h4>Three set bowns</h4>
+          <p>Ghc 600.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop13.jpeg" alt="Image 2">
+          <h4>Blender</h4>
+          <p>Ghc 400.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop14.jpeg" alt="Image 3">
+          <h4>
+            Vitaminc
+          </h4>
+          <p>Ghc 200.00</p>
+        </div>
+        <div class="item">
+          <img src="images2/shop15.jpeg" alt="Image 4">
+          <h4>Dressing set</h4>
+          <p>Ghc 700.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="banner1">
+    <img src="images2/BANNER1.jpg" alt="">
+</body>
+
+</html>
